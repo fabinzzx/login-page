@@ -1,0 +1,68 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Page</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    </head>
+    <body class="bg-cover bg-center h-screen mt-60" style="background-image: url('background.jpeg');">
+        
+            <div class="flex justify-center items-center">
+               
+                <form >
+                    <div class="flex justify-center text-3xl text-blue-600 font-bold ml-3">WELCOME BACK</div>
+                    <br>
+                    <label for="email" class="sr-only">Email</label>
+                    <input name="email" type="email" autocomplete="email" required=""
+                        class="ml-5 mr-3 py-7 pr-10 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+                        placeholder="Your Email" value="">
+                    
+                    <label for="password" class="sr-only">Password</label>
+                    <input name="password" type="password" autocomplete="current-password" required=""
+                        class="ml-5 mr-3 py-7 pr-10 mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+                        placeholder="Password" value="">
+                    <p class="mb-3 mt-2 text-sm text-gray-500 flex justify-end">
+                        <a href="/forgot-password" class="text-blue-800 hover:text-blue-600 text-xl">Forgot Password?</a>
+                    </p>
+                    
+                    <div class="flex w-full items-center gap-5 py-6 text-sm text-slate-600 ml-5">
+                        <div class="h-px w-full  bg-slate-400"></div>
+                        <p>OR</p>
+                        <div class="h-px w-full bg-slate-400"></div>
+                    </div>
+                    <div class="mt-7  flex flex-col gap-2">
+                    <button
+                    class=" ml-5 mr-3 py-7 pr-10 font-bold inline-flex h-10 w-full items-center justify-center gap-2 rounded-lg border-slate-300 bg-white p-2 text-black outline-none focus:ring-2 focus:ring-[#333] focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-60"><img
+                        src="https://w7.pngwing.com/pngs/326/85/png-transparent-google-logo-google-text-trademark-logo.png" alt="Google"
+                        class="h-[30px] w-[40px] rounded-full">Continue with
+                    Google
+                </button>
+                <button
+                    class=" ml-5 mr-3 py-7 pr-10 font-bold inline-flex h-10 w-full items-center justify-center gap-2 rounded-lg border-slate-300 bg-white p-2  text-black outline-none focus:ring-2 focus:ring-[#333] focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-60"><img
+                        src="https://w7.pngwing.com/pngs/561/460/png-transparent-fb-facebook-facebook-logo-social-media-icon.png" alt="Google"
+                        class="h-[30px] w-[40px] rounded-full">Continue with
+                    Facebook
+                </button>
+            </div><br>
+                    <button type="submit"
+                        class="inline-flex text-xl w-full items-center justify-center ml-5 mr-3 py-7 pr-10 rounded-lg bg-blue-800 p-2 text-sm font-medium text-white outline-none focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400">
+                        Login
+                    </button>
+                    <div class="  text-center text-xl text-slate-600 ml-5 font-bold mt-6">
+                        Don't have an account?
+                        <a href="/signup" class=" font-bold">Sign up</a>
+                    </div>
+                </form>
+                <div class="flex justify-center items-center ml-80 rounded-xl">
+                    <img src="boynew.png" alt="Right Image">
+                </div>
+            
+            </div>
+           
+        
+        </div>
+    </body>
+    </html>
